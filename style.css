@@ -1,0 +1,180 @@
+/* Body with background image, cover, fixed */
+body {
+  background: url(gamingpad.jpg.) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar with glass effect blending with background */
+nav.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Glass background box below navbar */
+.glass-bg {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 90%;
+  margin: 10rem auto 15rem auto; 
+
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+/* Left side: welcome text column */
+.glass-bg > .welcome-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Social icons */
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: crimson;
+}
+
+/* Right side: carousel + button */
+.glass-bg > .carousel-button-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button below carousel */
+.carousel-button-wrapper .btn {
+  width: 75%;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Footer fixed at bottom */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: #eee;
+}
+
+/* Responsive stack on smaller screens */
+@media (max-width: 768px) {
+  .glass-bg {
+    flex-direction: column;
+  }
+
+  .carousel-button-wrapper .btn {
+    width: 100%;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+
+.container .box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: transparent;
+  padding: 32px 40px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  box-shadow: 0px 9px 40px -8px rgb(0 0 0);
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 450px;
+}
+
+.box h2{
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+
+}
+.box form .input-box{
+  width: 100%;
+  margin-top: 35px;
+
+}
+.box form .input-box input{
+  width: 90%;
+  padding: 8px 10px;
+  font-size: 25px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  outline: none;
+  background: transparent;
+
+}
+.box form .input-box label{
+  position: absolute;
+  left: 15;
+  top: 8px;
+  color: #fff;
+  font-size: 25px;
+  pointer-events: none;
+
+}
+.box {
+  color: white;
+}
+
+body {
+  background: url("gamingpad.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.card {
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body {
+  background-color: #f8f9fa; /* Light grey background to fill gaps */
+}
+
+
